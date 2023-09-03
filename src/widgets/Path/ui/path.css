@@ -1,0 +1,35 @@
+.path {
+  max-width: 1450px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.path__icon {
+  width: 16px;
+}
+
+.path__page {
+  color: #828299;
+  font-size: 14px;
+  
+  white-space: pre;
+}
+
+span.path__page {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1600px) {
+  .path {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .path {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,101 @@
+.filter {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.filter__do,
+.filter__reset {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter__reset {
+  height: 45px;
+  padding: 15px;
+  border: 1px solid var(--color-main);
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.filter__reset:hover {
+  box-shadow: 0px 15px 20px -15px var(--color-main);
+}
+
+.filter__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 30px;
+  border-radius: var(--radius);
+  border: 2px solid #ededf2;
+  background: #fffefc;
+}
+
+.filter__title {
+  color: var(--color-additional);
+  font-weight: 600;
+}
+
+.filter__collection input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.filter__collection input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.filter__collection input + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--color-additional);
+  border-radius: 5px;
+  margin-right: 0.5em;
+}
+
+.filter__collection input:checked + label::before {
+  border: 1px solid var(--color-pink);
+  background: var(--color-pink);
+  border-radius: 2px;
+}
+
+.filter__price input {
+  width: 85%;
+  border: 1px solid var(--color-additional);
+  border-radius: 5px;
+  margin-left: 0.5em;
+  padding: 5px;
+}
+
+@media (max-width: 767px) {
+  .filter {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .filter__field {
+    width: 45%;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .listProducts__card .card__text {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+}

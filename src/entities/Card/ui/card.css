@@ -1,0 +1,16 @@
+.card__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.card__desc {
+  color: #828299;
+}
+
+.card__add {
+  color: #828299;
+  font-size: 14px;
+  
+}

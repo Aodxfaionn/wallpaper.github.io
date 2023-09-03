@@ -1,0 +1,112 @@
+html {
+  --color-main: #192040;
+  --color-additional: #828299;
+  --color-pink: #ff2e51;
+  --color-orange: #eeb370;
+  --radius: 30px;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"),
+    url("../assets/fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Regular.woff") format("woff"),
+    url("../assets/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../assets/fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Bold.woff") format("woff"),
+    url("../assets/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"),
+    url("../assets/fonts/Gilroy-Semibold.woff2") format("woff2"),
+    url("../assets/fonts/Gilroy-Semibold.woff") format("woff"),
+    url("../assets/fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Gilroy", "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  width: 100%;
+  margin: 0 auto;
+  background: #faf8f5;
+  background: linear-gradient(90deg, #b9deed, #efefef);
+  color: var(--color-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-main);
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-main);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+
+a:hover::before,
+a:focus-visible::before {
+  transform: scaleX(1);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}

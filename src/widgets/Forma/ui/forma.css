@@ -1,0 +1,136 @@
+.form {
+  position: relative;
+  border-radius: 40px;
+  border: 2px solid#FFF;
+  background: radial-gradient(
+      75.98% 72.3% at 71.36% 78.16%,
+      rgba(211, 229, 207, 0.3) 0%,
+      rgba(211, 229, 207, 0) 100%
+    ),
+    radial-gradient(
+      92.44% 103.17% at 0% 100%,
+      rgba(207, 213, 229, 0.3) 0%,
+      rgba(207, 213, 229, 0) 100%
+    ),
+    radial-gradient(
+      65.23% 84.12% at -0% 0%,
+      rgba(255, 181, 61, 0.1) 0%,
+      rgba(255, 181, 61, 0) 100%
+    ),
+    #fffefc;
+  padding: 60px 120px;
+}
+
+.form__form {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__name {
+  font-size: 12px;
+}
+
+.form__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  clip-path: circle(72.8% at 78% 0);
+  border-radius: 0 40px 0 0;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  bottom: 0;
+  right: 0;
+  background-color: #eeb370;
+  clip-path: circle(65.5% at 72% 100%);
+  border-radius: 0 0 40px 0;
+}
+
+.form__error {
+  color: #ff2e51;
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.input {
+  width: 350px;
+  height: 50px;
+  background: #fffefc;
+  border: 2px solid #ededf2;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-main);
+  -webkit-box-shadow: 0 0 0px 40rem #fffefc inset;
+}
+
+.consent__desc {
+  width: 50%;
+  margin-top: 10px;
+  color: #828299;
+  font-size: 14px;
+}
+
+@media (max-width: 1600px) {
+  .form .desc {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .form {
+    padding: 50px;
+  }
+  .form .desc {
+    width: 50%;
+  }
+  .form__form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form__img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .form {
+    padding: 20px;
+  }
+  .form__img {
+    display: none;
+  }
+  .form::before {
+    content: none;
+  }
+  .form .desc,
+  .consent__desc,
+  .input {
+    width: 100%;
+  }
+  .form .btn {
+    margin: 0 auto;
+  }
+  .form__form {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}

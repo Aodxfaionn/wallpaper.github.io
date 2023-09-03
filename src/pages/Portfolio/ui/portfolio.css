@@ -1,0 +1,22 @@
+.portfolio__work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.portfolio__work img {
+  border-radius: var(--radius);
+  width: 100%;
+  transition: 0.3s;
+  cursor: zoom-in;
+}
+
+.portfolio__work img:hover {
+  opacity: 50%;
+}
+
+@media (max-width: 767px) {
+  .portfolio__work {
+    gap: 20px;
+  }
+}

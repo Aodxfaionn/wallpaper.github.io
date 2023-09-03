@@ -1,0 +1,10 @@
+.logo {
+  width: 135px;
+  height: 125px;
+  display: block;
+}
+
+a.logo:hover::before,
+a.logo:focus-visible::before {
+  transform: scaleX(0);
+}

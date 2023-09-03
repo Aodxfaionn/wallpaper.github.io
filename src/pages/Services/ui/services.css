@@ -1,0 +1,40 @@
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .service__card {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service__card .card__text {
+    width: 55%;
+  }
+  
+  .service__card img {
+    border: 2px solid #fff;
+    border-radius: var(--radius);
+    width: 40%;
+  }
+  
+  .service__card:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
+  @media (max-width: 850px) {
+    .service__card .card__text {
+      width: 100%;
+    }
+    .service__card img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .service__card, .service__card:nth-of-type(even) {
+      flex-direction: column;
+    }
+  }

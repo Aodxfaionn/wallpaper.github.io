@@ -1,0 +1,323 @@
+.decorationSlide .sliderBlock {
+  position: relative;
+}
+
+.decorationSlide .sliderBlock:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 75%;
+  clip-path: circle(87.1% at 26% -37%);
+  background-color: #ffb862;
+  opacity: 0.8;
+}
+
+.decorationSlide .sliderBlock__img {
+  border-radius: 0;
+}
+
+.decoration {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.decoration__card {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.decoration__card .card__text {
+  width: 55%;
+}
+
+.decoration__card img {
+  border: 2px solid #fff;
+  border-radius: var(--radius);
+  width: 40%;
+  max-height: 320px;
+}
+
+.decoration__card:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.howwork img {
+  display: none;
+}
+
+.howwork {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 120px;
+  counter-reset: howworkCounter;
+}
+
+.howwork__card {
+  position: relative;
+  width: 23%;
+}
+
+.howwork__card::before {
+  counter-increment: howworkCounter;
+  content: counter(howworkCounter);
+  position: absolute;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  top: -100px;
+  left: 0;
+  border-radius: var(--radius);
+  border: 2px solid var(--white, #fff);
+  background: radial-gradient(
+      78.22% 78.22% at -0% 100%,
+      rgba(207, 213, 229, 0.4) 0%,
+      rgba(207, 213, 229, 0) 100%
+    ),
+    radial-gradient(
+      93.91% 93.91% at 113.28% 62.5%,
+      rgba(211, 229, 207, 0.3) 0%,
+      rgba(211, 229, 207, 0) 100%
+    ),
+    radial-gradient(
+      121.66% 121.66% at -0% 0%,
+      rgba(255, 220, 141, 0.08) 0%,
+      rgba(255, 220, 141, 0) 100%
+    ),
+    #fffefc;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.stagesText__title {
+  color: var(--color-main);
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.stagesText__desc {
+  color: #828299;
+  margin-bottom: 30px;
+}
+
+.stage__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: var(--radius);
+  border: 2px solid #fff;
+  background: radial-gradient(
+      57.81% 66.99% at 22.29% 100%,
+      rgba(207, 213, 229, 0.15) 0%,
+      rgba(207, 213, 229, 0) 100%
+    ),
+    radial-gradient(
+      115.61% 95.13% at 0% 0%,
+      rgba(255, 220, 141, 0.08) 0%,
+      rgba(255, 220, 141, 0) 100%
+    ),
+    #fffefc;
+}
+
+.stage__card .card__text {
+  padding: 15px 30px;
+}
+
+.stage__card img {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  height: 90%;
+  border-radius: var(--radius);
+}
+
+.stage {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "text text one one one second"
+    "three three four four four second"
+    "five five six six seven seven";
+}
+
+.stagesText {
+  grid-area: text;
+}
+
+.stage__card:nth-of-type(2) {
+  grid-area: one;
+  flex-direction: row-reverse;
+}
+
+.stage__card:nth-of-type(2) .card__add {
+  position: absolute;
+  top: 7%;
+  right: 10%;
+}
+
+.stage__card:nth-of-type(3) {
+  grid-area: second;
+  flex-direction: column;
+}
+
+.stage__card:nth-of-type(3) .card__add {
+  position: absolute;
+  bottom: 55%;
+}
+
+.stage__card:nth-of-type(4) {
+  grid-area: three;
+  flex-direction: row-reverse;
+}
+
+.stage__card:nth-of-type(5) {
+  grid-area: four;
+}
+
+.stage__card:nth-of-type(5) .card__add {
+  position: absolute;
+  top: 5%;
+  left: 24%;
+}
+
+.stage__card:nth-of-type(6) {
+  grid-area: five;
+  flex-direction: row-reverse;
+}
+
+.stage__card:nth-of-type(6) .card__add {
+  position: absolute;
+  bottom: 9%;
+  right: 11%;
+}
+
+.stage__card:nth-of-type(7) {
+  grid-area: six;
+  flex-direction: row-reverse;
+}
+
+.stage__card:nth-of-type(8) {
+  grid-area: seven;
+  flex-direction: column;
+  text-align: center;
+}
+
+.stage__card .card__add {
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 130%;
+  color: #ffb862;
+}
+
+.stage__card:nth-of-type(2) img,
+.stage__card:nth-of-type(4) img,
+.stage__card:nth-of-type(5) img {
+  bottom: -15px;
+}
+
+.stage__card:nth-of-type(7) img {
+  height: 100%;
+}
+
+.stage__card:nth-of-type(6) img {
+  top: -18px;
+}
+
+@media (max-width: 1600px) {
+  .container.stages {
+    margin-top: -50px;
+  }
+  .howwork__card {
+    width: 48%;
+  }
+  .howwork__card .card__text {
+    height: 190px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .stage__card img,
+  .stage__card:nth-of-type(7) img {
+    height: auto;
+  }
+  .stage__card:nth-of-type(3) .card__add {
+    bottom: 0%;
+  }
+  .howwork__card .card__text {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .stage {
+    display: none;
+  }
+  .stages + .container.accordeon {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .decorationSlide .sliderBlock__desc {
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 850px) {
+  .decoration__card .card__text {
+    width: 100%;
+  }
+  .decoration__card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .decoration__card,
+  .decoration__card:nth-of-type(even) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .decorationSlide {
+    margin-top: 20px;
+  }
+  .decorationSlide .sliderBlock:before {
+    content: none;
+  }
+  .howwork__card {
+    width: 45%;
+  }
+  .howwork__card .card__text {
+    height: 300px;
+    margin-top: -45px;
+  }
+  .howwork__card::before {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .howwork__card {
+    width: 100%;
+  }
+  .howwork__card .card__text {
+    height: 210px;
+  }
+}

@@ -1,0 +1,29 @@
+.card-link {
+  transition: 0.3s;
+}
+
+.card-link::before {
+  content: none;
+}
+
+.card-link:hover {
+  box-shadow: 1px 1px 10px #828299;
+  border-radius: var(--radius);
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+.card__desc {
+  color: #828299;
+}
+
+.card__add {
+  color: #828299;
+  font-size: 14px;
+  
+}
