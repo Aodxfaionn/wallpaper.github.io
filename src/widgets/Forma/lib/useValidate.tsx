@@ -1,7 +1,7 @@
 export const useValidate = () => {
   const handleNameChange = (value: string) => {
-    if (value.length < 3) return "Поле не должно содержать меньше 3-х символов";
-    else if (!value) return "Поле, обязательное для заполнения";
+    if (value.length < 1) return "Поле, обязательное для заполнения";
+    else if (value.length < 3) return "Поле не должно содержать меньше 3-х символов";
   };
 
   const handlePhoneChange = (value: string) => {
