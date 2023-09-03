@@ -30,9 +30,19 @@
 }
 
 .communicate__link {
+  height: 45px;
+  padding: 15px;
   display: flex;
   gap: 5px;
   align-items: center;
+  border: 1px solid var(--color-main);
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+
+.communicate__link:hover {
+  box-shadow: 0px 15px 20px -15px var(--color-main);
 }
 
 .form-product .title {
@@ -42,6 +52,8 @@
 .form-product .form__form {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .form-product .form__form > div {
@@ -64,6 +76,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .form-product .title {
+    width: 70%;
+  }
+}
+
 @media (max-width: 767px) {
   .product,
   .communicate {
@@ -73,6 +91,9 @@
     margin-top: 20px;
   }
   .productPhoto img {
+    width: 100%;
+  }
+  .form-product .title {
     width: 100%;
   }
 }

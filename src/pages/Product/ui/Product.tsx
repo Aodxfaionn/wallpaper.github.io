@@ -31,7 +31,6 @@ function Product() {
             2 552 ₽ <span className="productInfo__price-metr">552 ₽ / м2</span>
           </p>
           <div className="communicate">
-            <a href="#form" className="btn">Оформить заказ</a>
             <a href="tel:+75558889866" className="communicate__link">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +50,7 @@ function Product() {
         </Text>
       </div>
       <Accordeon arr={questions} />
-      <section id="form" className="container form form-product">
+      <section className="container form form-product">
         <h2 className="title">Для оформления заказа заполните данные:</h2>
         <Formik
           initialValues={{ name: "", tel: "", articul: "", metr: "" }}
