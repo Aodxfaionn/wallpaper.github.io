@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wallpaper.github.io/static/css/main.cb782eaa.css",
+    "main.css": "/wallpaper.github.io/static/css/main.d4ed4583.css",
     "main.js": "/wallpaper.github.io/static/js/main.5e73e6f3.js",
     "static/media/decoration3.jpg": "/wallpaper.github.io/static/media/decoration3.2bdce52848dd7d265675.jpg",
     "static/media/bg2.jpg": "/wallpaper.github.io/static/media/bg2.30154e16d9e3a3658ce3.jpg",
@@ -61,11 +61,11 @@
     "index.html": "/wallpaper.github.io/index.html",
     "static/media/prev.svg": "/wallpaper.github.io/static/media/prev.b4e2ddccb708840549d8.svg",
     "static/media/next.svg": "/wallpaper.github.io/static/media/next.4e5deac59b1a0a948c7f.svg",
-    "main.cb782eaa.css.map": "/wallpaper.github.io/static/css/main.cb782eaa.css.map",
+    "main.d4ed4583.css.map": "/wallpaper.github.io/static/css/main.d4ed4583.css.map",
     "main.5e73e6f3.js.map": "/wallpaper.github.io/static/js/main.5e73e6f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb782eaa.css",
+    "static/css/main.d4ed4583.css",
     "static/js/main.5e73e6f3.js"
   ]
 }
