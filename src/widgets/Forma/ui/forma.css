@@ -22,6 +22,8 @@
 }
 
 .form__form {
+  position: relative;
+  z-index: 1;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -93,15 +95,21 @@ input:-webkit-autofill:focus {
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1300px) {
   .form {
-    padding: 50px;
+    padding: 20px 30px;
   }
   .form .desc {
     width: 50%;
   }
-  .form__form {
-    flex-direction: column;
+  .input {
+    width: 270px;
+  }
+  .form__img {
+    clip-path: circle(55.8% at 78% 0);
+  }
+  .form:before {
+    width: 30%;
   }
 }
 
@@ -130,6 +138,7 @@ input:-webkit-autofill:focus {
     margin: 0 auto;
   }
   .form__form {
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 10px;
   }
