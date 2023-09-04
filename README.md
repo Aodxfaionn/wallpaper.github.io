@@ -1,4 +1,4 @@
-<img src="https://ibb.co/Vt2V5bt" alt="Демо проекта"/>
+<img src="https://i.ibb.co/pxJ25Nx/2023-09-04-21-28-11.png" alt="Демо проекта"/>
 <p>Wallpaper-shop</p>
 <p>Ссылка на проект: https://aodxfaionn.github.io/wallpaper.github.io/ </p>
 <p>Функционал: сайт для магазина обоев с информацией о студии, блогом компании и каталогом товаров.</p>
